@@ -6,15 +6,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background: linear-gradient(135deg, #f5af19, #f12711);
+    color: #fff;
+    text-align: center;
 }
 
 .welcome-container {
     text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .date-time {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 20px;
 }
 
@@ -22,20 +28,30 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+    border: 2px solid #fff;
     margin-bottom: 20px;
+}
+
+.user-info h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.user-info p {
+    margin: 5px 0 20px;
 }
 
 .btn {
     padding: 10px 20px;
     font-size: 1em;
-    border: 2px solid #333;
+    border: 2px solid #fff;
     border-radius: 20px;
-    background-color: #fff;
+    background-color: transparent;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .btn:hover {
-    background-color: #333;
-    color: #fff;
+    background-color: #fff;
+    color: #333;
 }
