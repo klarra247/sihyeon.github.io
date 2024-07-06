@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('assets/images/wallpaper.jpg') no-repeat center center fixed;
+    background: url('/assets/images/wallpaper.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
     text-align: center;
@@ -43,37 +43,65 @@ body::before {
 .social-icons {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
-.social-icons a {
-    color: white;
-    font-size: 1.5em;
-    margin-right: 10px;
-    text-decoration: none;
+.social-icons li {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons li a {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+.social-icons li a svg {
+    width: 18px;
+    fill: white;
+}
+
+.social-icons li a:hover {
+    transform: scale(1.2) translateY(-10%);
 }
 
 .date-time {
-    font-size: 1.2em;
+    font-size: 1.1em;
+    margin-right: 10px;
+    user-select: none;
+
 }
+
+/* .social-icons li a:hover svg {
+    fill: orange;
+} */
+
 
 .profile-pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 2px solid #fff;
     margin-bottom: 20px;
+    user-select: none;
 }
 
 .user-info h2 {
     margin: 0;
     font-size: 1.5em;
+    user-select: none;
+
 }
 
 .user-info p {
     margin: 5px 0 20px;
+    user-select: none;
+
 }
 
+/* 
 .btn {
     padding: 10px 20px;
     font-size: 1em;
@@ -87,4 +115,38 @@ body::before {
 .btn:hover {
     background-color: #fff;
     color: #333;
+} */
+
+.slider-container {
+    position: relative;
+    width: 240px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    margin: 16px auto 0 auto;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider {
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    transition: left 0.3s ease;
+}
+
+.slide-text {
+    line-height: 50px;
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    user-select: none;
 }
