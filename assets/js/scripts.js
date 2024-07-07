@@ -63,3 +63,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// 아이콘 확대
+document.addEventListener('DOMContentLoaded', function() {
+    const dockItems = document.querySelectorAll('.dock-item');
+
+    dockItems.forEach((item, index) => {
+        item.addEventListener('mouseover', function() {
+            dockItems.forEach(dockItem => {
+                dockItem.style.transform = 'scale(1)';
+            });
+
+            item.style.transform = 'scale(1.5)';
+            if (dockItems[index - 1]) {
+                dockItems[index - 1].style.transform = 'scale(1.2)';
+            }
+            if (dockItems[index + 1]) {
+                dockItems[index + 1].style.transform = 'scale(1.2)';
+            }
+        });
+
+        item.addEventListener('mouseout', function() {
+            dockItems.forEach(dockItem => {
+                dockItem.style.transform = 'scale(1)';
+            });
+        });
+    });
+});
