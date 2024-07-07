@@ -3,7 +3,7 @@ body {
     padding: 0;
     overflow: hidden;
     font-family: Arial, sans-serif;
-    background: url('/assets/images/wallpaper.jpg') no-repeat center center fixed;
+    background: url('{{ site.baseurl }}/assets/images/wallpaper.jpg') no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -12,6 +12,54 @@ body {
     justify-content: space-between;
     height: 100vh;
     align-items: flex-end;
+}
+
+.header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    /* padding: 5px 10px; */
+    box-sizing: border-box;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.social-icons li {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons li a {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+.social-icons li a svg {
+    width: 18px;
+    fill: white;
+}
+
+.social-icons li a:hover {
+    transform: scale(1.2) translateY(-10%);
+}
+
+.date-time {
+    font-size: 1.1em;
+    margin-right: 8px;
+    user-select: none;
+    color: white;
 }
 
 .dock {
@@ -38,16 +86,16 @@ body {
 }
 
 
-.dock-item img:hover {
-    transform: scale(1.6);
-}
+/* .dock-item img:hover {
+    transform: scale(1.5);
+} */
 
 .files {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     position: absolute;
-    top: 20px; 
+    top: 40px; 
     right: 20px; 
     
 }

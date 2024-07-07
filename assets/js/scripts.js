@@ -74,12 +74,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 dockItem.style.transform = 'scale(1)';
             });
 
-            item.style.transform = 'scale(1.5)';
+            item.style.transform = 'scale(1.6)';
             if (dockItems[index - 1]) {
-                dockItems[index - 1].style.transform = 'scale(1.2)';
+                dockItems[index - 1].style.transform = 'scale(1.15)';
             }
             if (dockItems[index + 1]) {
-                dockItems[index + 1].style.transform = 'scale(1.2)';
+                dockItems[index + 1].style.transform = 'scale(1.15)';
             }
         });
 
