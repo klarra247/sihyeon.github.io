@@ -22,7 +22,7 @@ title: 시현의 맥블로그
 email: klarra247@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Welcome to Sihyeon's MacBlog!
-baseurl: "/sihyeon.github.io" # the subpath of your site, e.g. /blog
+baseurl:  # the subpath of your site, e.g. /blog
 #url: "http://sihyeon.github.io.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  klarra247
 instagram_username: lvlohyeon

@@ -30,6 +30,10 @@
                 <li><a aria-label="My LinkedIn" href="https://www.linkedin.com/in/sihyeon-lee-4173b1260">
                     <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
                 </a></li>
+
+                <li><a href="#" id="music-icon">
+                    <img src="assets/icons/music.png" alt="Music">
+                </a></li>
             
             </div>
             <div class="date-time" id="date-time"></div>
@@ -61,6 +65,56 @@
             <div class="file"><img src="assets/icons/folder.png" alt="Folder"><span>Study</span></div>
             <div class="file"><img src="assets/icons/folder.png" alt="Folder"><span>Work</span></div>
         </div>
+    </div>
+    <div id="music-popup" class="music-popup">
+        <h3>오늘의 추천곡</h3>
+        <div class="current-song">
+            <a href="https://www.melon.com/song/detail.htm?songId=33632153" target="_blank">
+                <img src="assets/images/music.jpg" alt="Current Song">
+            </a>
+            <div class="song-details">
+                <div class="marquee">
+                    <p class="song-title">비 오는 날 듣기 좋은 노래 (Feat. Colde)</p>
+                </div>
+                <p class="artist-name">에픽하이 (EPIK HIGH)</p>
+                <div class="music-controls">
+                    <button class="control-button" id="prev-button">⏮</button>
+                    <button class="control-button" id="play-button">⏸</button>
+                    <button class="control-button" id="next-button">⏭</button>
+                </div>
+            </div>
+        </div>
+        <h3>더 많은 추천곡</h3>
+        <ul class="recommended-songs">
+            <li class="recommended-song">
+                <a href="https://www.melon.com/song/detail.htm?songId=33596736" target="_blank">
+                    <img src="assets/images/music_1.jpg" alt="Recommended Song">
+                </a>
+                <div class="recommended-details">
+                    <p class="song-title">사계</p>
+                    <p class="artist-name">양홍원</p>
+
+                </div>
+            </li>
+            <li class="recommended-song">
+                <a href="https://www.melon.com/song/detail.htm?songId=32584915" target="_blank">
+                    <img src="assets/images/music_2.jpg" alt="Recommended Song">
+                </a>
+                <div class="recommended-details">
+                    <p class="song-title">개화 (Flowering)</p>
+                    <p class="artist-name">LUCY</p>
+                </div>
+            </li>
+            <li class="recommended-song">
+                <a href="https://www.melon.com/song/detail.htm?songId=37238092" target="_blank">
+                    <img src="assets/images/music_3.jpg" alt="Recommended Song">
+                </a>
+                <div class="recommended-details">
+                    <p class="song-title">Fucked (Feat. 식케이 (Sik-K))</p>
+                    <p class="artist-name">릴러말즈 (Leellamarz)</p>
+                </div>
+            </li>
+        </ul>
     </div>
     <script src="assets/js/scripts.js"></script>
 </body>

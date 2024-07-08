@@ -90,3 +90,51 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// // 음악 팝업
+// document.addEventListener('DOMContentLoaded', function() {
+//     const musicIcon = document.getElementById('music-icon');
+//     const musicPopup = document.getElementById('music-popup');
+
+//     musicIcon.addEventListener('click', function() {
+//         if (musicPopup.style.display === 'none' || musicPopup.style.display === '') {
+//             musicPopup.style.display = 'block';
+//         } else {
+//             musicPopup.style.display = 'none';
+//         }
+//     });
+// });
+
+// 음악 팝업 재생 및 일시정지
+document.addEventListener('DOMContentLoaded', function() {
+    const musicIcon = document.getElementById('music-icon');
+    const musicPopup = document.getElementById('music-popup');
+    const playButton = document.getElementById('play-button');
+    const marquee = document.querySelector('.marquee');
+    const marqueeText = marquee.querySelector('p');
+
+    // Toggle music popup visibility
+    musicIcon.addEventListener('click', function() {
+        if (musicPopup.style.display === 'none' || musicPopup.style.display === '') {
+            musicPopup.style.display = 'block';
+            setTimeout(() => {
+                marquee.classList.add('marquee-start');
+            }, 10000); // 10초 후에 애니메이션 시작
+        } else {
+            musicPopup.style.display = 'none';
+            marquee.classList.remove('marquee-start');
+        }
+    });
+
+    // Play or pause audio
+    playButton.addEventListener('click', function() {
+        if (playButton.textContent == '▶️') {
+            playButton.textContent = '⏸';
+            playButton.classList.add('pause');
+        } else {
+            playButton.textContent = '▶️';
+            playButton.classList.remove('pause');
+        }
+    });
+
+});
